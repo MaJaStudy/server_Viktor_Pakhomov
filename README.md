@@ -1,5 +1,11 @@
 # server_Viktor_Pakhomov
 
+## Launch
+
+Чтобы запустить программу, в командной строке из репозитория необходимо прописать node src/server.js
+
+После этого, нужно перейти на адрес http://localhost:3000/app.html
+
 ## Identification
 
 Пахомов Виктор Васильевич

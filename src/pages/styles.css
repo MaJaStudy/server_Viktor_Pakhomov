@@ -1,0 +1,52 @@
+html, body {
+    height: 95%;
+}
+.main {
+    height: 95%;
+    width: 95%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 95%;
+    vertical-align: middle;
+    text-align: center;
+}
+.result {
+    display: table-cell;
+    height: 95%;
+    text-align: left;
+}
+    a:link {color:pink} /* цвет непосещённой ссылки */  
+    a:visited {color:#FF99D3} /* цвет посещённой ссылки */  
+    a:hover {color: #FF0000} /* цвет ссылки при наведении курсора мыши */  
+    a:active {color:#FFFFFF} /* цвет активной ссылки (в момент нажатия) */  
+.bold { font-weight: 700; }
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    color: pink;
+}
+h1 {
+    color: pink
+}
+input {
+padding: 10px;
+margin: 5px;    
+} 
+button {
+    background-color: #666666;
+    color: pink;
+    padding: 15px;
+    margin: 5px;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+}
+input {
+    background-color: #666666;
+    color: pink;
+    
+}
+input::placeholder { color: #c896a0; }
