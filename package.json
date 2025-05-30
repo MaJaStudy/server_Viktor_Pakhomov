@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MaJaStudy/server_Viktor_Pakhomov/issues"
   },
-  "homepage": "https://github.com/MaJaStudy/server_Viktor_Pakhomov#readme"
+  "homepage": "https://github.com/MaJaStudy/server_Viktor_Pakhomov#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }

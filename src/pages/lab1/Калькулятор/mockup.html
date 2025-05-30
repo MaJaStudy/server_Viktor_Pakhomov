@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Кальклятор</title>
+</head>
+<div class = "main"><div class = "wrapper">
+    <body>
+            <h1>Пахомов Виктор Васильевич 231</h1>
+            <h2>Заполните форму</h2>
+            <label>Число 1</label>&#x09;<input type="text" id="Num" value="1" placeholder="Введите Число 1" onkeypress="return isNumberKey(event)"/><br>
+            <label>Число 2</label>&#x09;<input type="text" id="Mun" value="2" placeholder="Введите Число 2" onkeypress="return isNumberKey(event)"/><br>
+            <!--<input type="submit" id="btn"><br>-->
+            <button type="submit" id="Add">Сложить</button>
+            <button type="submit" id="Sub">Вычесть</button>
+            <button type="submit" id="Mul">Умножить</button>
+            <button type="submit" id="Div">Поделить</button>
+            <button type="submit" id="Clear">Очистить</button><br>
+            <label>Результат:</label><input type="text" id="Rez" placeholder="Результат" readonly>
+            <script src="caculator.js"></script>
+    </body>
+</div></div>
+</html>
