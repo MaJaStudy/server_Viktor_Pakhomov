@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaJaStudy/server_Viktor_Pakhomov.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaJaStudy/server_Viktor_Pakhomov/issues"
+  },
+  "homepage": "https://github.com/MaJaStudy/server_Viktor_Pakhomov#readme"
+}
