@@ -1,5 +1,5 @@
 
-# server_Viktor_Pakhomov
+# server
 
 ![Logo](https://i.ibb.co/ZzDwLLMw/1748650372684.png)
 
