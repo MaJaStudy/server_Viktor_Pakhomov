@@ -1,0 +1,33 @@
+html, body {
+    height: 95%;
+}
+.main {
+    height: 95%;
+    width: 95%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 95%;
+    vertical-align: middle;
+    text-align: center;
+}
+.bold { font-weight: 700; }
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    color: pink;
+}
+h1 {
+    color: pink
+}
+button {
+    background-color: #666666;
+    color: pink;
+    padding: 15px;
+    margin: 5px;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+}
