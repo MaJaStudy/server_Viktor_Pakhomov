@@ -12,7 +12,7 @@
 ```
 
 1. Стандартный язык, используемый для создания веб-страниц; `<html></html>`; `<head></head>`; `<body></body>`.
-2. <link rel="stylesheet" href="styles.css"> в <head> HTML.
+2. `<link rel="stylesheet" href="styles.css">` в <head> HTML.
 ### Практика: (Можно использовать "!" и нажать TAB, после чего заполнить получившееся.)
 ```html
     <!DOCTYPE html>
