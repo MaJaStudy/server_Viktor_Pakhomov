@@ -1,19 +1,18 @@
 .wrapper{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center; /*centers items on the line (the x-axis by default)*/
-  align-items: center; /*centers items on the cross-axis (y by default)*/
-  background-color: #000000;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
 }
 .myButton{
   width: 100px;
   height: 50px;
   margin: 10px;
   text-align: center;
-  line-height: 50px; /* Для центрирования текста по вертикали */
+  line-height: 50px;
   background-color: #FFFFFF;
   border-radius: 20px;
   transition: transform 5s;
