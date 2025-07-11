@@ -1,3 +1,24 @@
+.wrapper{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center; /*centers items on the cross-axis (y by default)*/
+  background-color: #000000;
+}
+.myButton{
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px; /* Для центрирования текста по вертикали */
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  transition: transform 0.75s;
+}
 .myButton:hover {
   background-color: #FF99D3;
+  transform: scale(2) perspective(2px)
 }
