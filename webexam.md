@@ -750,16 +750,12 @@ printWithDelay();
 ### Практика:
 ```js
 function isPalindrome(str) {
-  const cleanStr = str.toLowerCase();
-  let left = 0;
-  let right = cleanStr.length - 1;
-
-  while (left < right) {
-    if (cleanStr[left] !== cleanStr[right]) {
+  const cleanstr = str.replace(/[^a-zA-Z0-9]/g, '')
+  const len = cleanstr.length;
+  for (let i = 0; i < Math.floor(len / 2); i++) {
+    if (cleanstr[i] !== cleanstr[len - 1 - i]) {
       return false;
     }
-    left++;
-    right--;
   }
   return true;
 }
@@ -779,19 +775,17 @@ function isPalindrome(str) {
 ### Практика:
 ***FORM.PHP***
 ```html
-<?php
-// form.php
-?>
+<?php header('X-Content-Type-Options: nosniff'); ?>
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Форма</title>
 </head>
 <body>
-    <form action="request.php" method="post">
-        <label for="input_text">Введите текст:</label><br>
-        <input type="text" id="input_text" name="input_text"><br><br>
-        <input type="submit" value="Отправить">
+    <form action="request.php" method="POST">
+        <input type="text" name="name" required>
+        <button type="submit">Отправить</button>
     </form>
 </body>
 </html>
@@ -799,23 +793,26 @@ function isPalindrome(str) {
 ***REQUEST.PHP***
 ```php
 <?php
-// request.php
+header('X-Content-Type-Options: nosniff');
+header('Content-Type: text/html; charset=utf-8');
+
+function sanitize($data) {
+    return htmlspecialchars(trim($data), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = isset($_POST['name']) ? sanitize($_POST['name']) : '';
+}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Результат</title>
+    <meta charset="UTF-8">
+    <title>Данные</title>
 </head>
 <body>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $input_text = isset($_POST["input_text"]) ? $_POST["input_text"] : '';
-        $input_text = htmlspecialchars($input_text, ENT_QUOTES, 'UTF-8'); // Защита от JS-инъекций
-        echo "<p>Введенный текст: " . $input_text . "</p>";
-    } else {
-        echo "<p>Нет данных для отображения.</p>";
-    }
-    ?>
+    <p>Имя: <?php echo $name; ?></p>
+    <a href="form.php">Назад</a>
 </body>
 </html>
 ```
