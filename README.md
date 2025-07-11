@@ -1,7 +1,7 @@
 
 # server
 
-![Logo](https://i.ibb.co/ZzDwLLMw/1748650372684.png)
+![Logo](https://media1.tenor.com/m/LMt7aoFnJ_AAAAAd/cecilia-immergreen-hololive.gif)
 
 ## Launch
 
